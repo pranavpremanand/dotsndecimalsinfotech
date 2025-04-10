@@ -21,14 +21,17 @@ import UnlockEfficiency from "../../componets/common/UnlockEfficiency";
 import Portfolio from "../../componets/common/Portfolio";
 import ContactForm from "../../componets/common/ContactForm";
 import BrandLogos from "../../componets/common/BrandLogos";
+import { landingPageContent } from "../../data/servicesPageDetalls";
 
 export const LandingPage = ({ page }) => {
   const isWebDevelopment = Boolean(page === "web-development");
+  const selectedService = landingPageContent.find((item) => item.id === page);
+
   return (
     <>
       <div id="banner" className="min-h-screen relative">
         <img
-          src={isWebDevelopment ? webDevBanner : appDevBanner}
+          src={selectedService?.bannerImg}
           className="w-full h-full object-cover object-right absolute"
           alt=""
         />
@@ -39,17 +42,21 @@ export const LandingPage = ({ page }) => {
         >
           <div className="relative sm:translate-y-[3rem] z-10 px-6 justify-center h-full flex flex-col items-center gap-5 text-center md:max-w-[60rem] mx-auto">
             <div className="rounded-text-box border-white/70 font-medium text-white">
-              {isWebDevelopment ? "Web Development" : "App Development"}
+              {/* {isWebDevelopment ? "Web Development" : "App Development"} */}
+              {selectedService?.title}
             </div>
             <h1 className="heading-1 text-white">
-              {isWebDevelopment
+              {/* {isWebDevelopment
                 ? "Transforming Ideas into Seamless Web Experiences"
-                : "Creating Seamless App Experiences for a Digital World"}
+                : "Creating Seamless App Experiences for a Digital World"} */}{" "}
+              {selectedService?.title}
+              {selectedService?.bannerHeading}
             </h1>
             <p className="text-white desc">
-              {isWebDevelopment
+              {/* {isWebDevelopment
                 ? "High-performance web development services designed to create secure, scalable, and user-friendly websites that enhance your business's digital presence."
-                : "High-performance app development services designed to deliver secure, scalable, and user-friendly applications that elevate your business's digital reach and engage your audience."}
+                : "High-performance app development services designed to deliver secure, scalable, and user-friendly applications that elevate your business's digital reach and engage your audience."} */}
+              {selectedService?.bannerDesc}
             </p>
             <ScrollLink
               to="contact"
@@ -70,7 +77,9 @@ export const LandingPage = ({ page }) => {
           data-aos="fade-up"
           className="gradient-rounded-text-box mx-auto lg:mx-0"
         >
-          {isWebDevelopment ? "Web Development" : "App Development"}
+          {/* {isWebDevelopment ? "Web Development" : "App Development"}
+           */}
+          {selectedService?.title}
         </div>
         <div className="flex flex-col-reverse items-center lg:grid grid-cols-2 gap-10 mt-7">
           <div
@@ -79,14 +88,16 @@ export const LandingPage = ({ page }) => {
           >
             <div className="flex flex-col gap-7">
               <h2 className="heading-2">
-                {isWebDevelopment
+                {/* {isWebDevelopment
                   ? "Transforming Your Vision into Cutting-Edge Web Solutions"
-                  : "Crafting Intuitive Apps for the Modern Digital Era"}
+                  : "Crafting Intuitive Apps for the Modern Digital Era"} */}
+                {selectedService?.aboutHeading}
               </h2>
               <p className="desc">
-                {isWebDevelopment
+                {/* {isWebDevelopment
                   ? "At Dots&Decimals Infotech, we craft high-performance websites and digital experiences designed to elevate your online presence. From custom development to responsive design, our solutions are built for usability, aesthetics, and business success."
-                  : "At Dots&Decimals Infotech, we develop innovative, high-performance mobile applications tailored to your business needs. With a blend of technical expertise and creative design, we build apps that enhance user engagement and drive business growth."}
+                  : "At Dots&Decimals Infotech, we develop innovative, high-performance mobile applications tailored to your business needs. With a blend of technical expertise and creative design, we build apps that enhance user engagement and drive business growth."} */}
+                {selectedService?.aboutDesc}
               </p>
             </div>
             <div className="flex justify-center lg:justify-start gap-5 mt-4">
@@ -110,7 +121,7 @@ export const LandingPage = ({ page }) => {
           </div>
           <div data-aos="fade-left" className="h-full">
             <img
-              src={isWebDevelopment ? webLandingAbout : appLandingAbout}
+              src={selectedService?.aboutImg}
               className="object-contain max-h-[30rem]"
               alt=""
             />
@@ -134,15 +145,16 @@ export const LandingPage = ({ page }) => {
             data-aos="fade-up"
             className="heading-1 bg-gradient-to-r md:min-h-[5rem] from-primary to-secondary bg-clip-text text-transparent"
           >
-            {page === "web-development"
+            {/* {page === "web-development"
               ? "Web Development That Transforms"
-              : "App Development That Delivers"}
+              : "App Development That Delivers"} */}
+            {selectedService.expertiseHeading}
           </h1>
           <p
             data-aos="fade-up"
             className="desc max-w-3xl mx-auto leading-relaxed"
           >
-            {page === "web-development"
+            {/* {page === "web-development"
               ? `At Dots&Decimals Infotech, we craft digital experiences that do more than just look good - they drive results. 
         In today's competitive online landscape, your website needs to be fast, intuitive, and conversion-optimized. 
         We build responsive, secure websites that not only establish your brand's credibility but also work tirelessly 
@@ -152,7 +164,8 @@ export const LandingPage = ({ page }) => {
         In an era where mobile dominates digital interactions, your app needs to be performant, engaging, and reliable. 
         We develop native and cross-platform applications that deliver smooth performance, intuitive interfaces, 
         and features that keep users coming back. From initial concept to post-launch optimization, we build apps 
-        that solve real business challenges and drive measurable results.`}
+        that solve real business challenges and drive measurable results.`} */}
+            {selectedService.expertiseDesc}
           </p>
         </div>
       </section>

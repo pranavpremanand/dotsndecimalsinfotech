@@ -9,7 +9,7 @@ import {
 } from "../../constant";
 
 const WhyChooseUs = () => {
-  const totalYrs = 2;
+  const totalYrs = 1;
   const totalOnTimeCompletionPercentage = 100;
   const totalExperts = 10;
   const totalClients = 50;

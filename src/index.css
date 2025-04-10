@@ -10,7 +10,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #f2ad18;
+  background-color: #ebd36b;
   border-radius: 8px;
 }
 
@@ -47,10 +47,10 @@ body {
     @apply text-primary font-semibold;
   }
   .primary-btn {
-    @apply text-black cursor-pointer tracking-wide bg-tertiary hover:bg-tertiary/80 text-sm hover:shadow-secondary hover:-translate-y-1 shadow-2xl shadow-transparent rounded-[.3rem] px-4 py-3 min-w-[7rem] flex justify-center text-center transition-all duration-300;
+    @apply text-black cursor-pointer tracking-wide bg-primary hover:bg-primary/80 text-sm hover:shadow-secondary hover:-translate-y-1 shadow-2xl shadow-transparent rounded-[.3rem] px-4 py-3 min-w-[7rem] flex justify-center text-center transition-all duration-300;
   }
   .secondary-btn {
-    @apply text-primary cursor-pointer tracking-wide bg-black border border-tertiary hover:bg-tertiary hover:text-black text-sm hover:shadow-primary hover:-translate-y-1 shadow-2xl shadow-transparent rounded-[.3rem] px-4 py-3 min-w-[7rem] flex justify-center text-center transition-all duration-300;
+    @apply text-primary cursor-pointer tracking-wide bg-black border border-primary hover:bg-primary hover:text-black text-sm hover:shadow-primary hover:-translate-y-1 shadow-2xl shadow-transparent rounded-[.3rem] px-4 py-3 min-w-[7rem] flex justify-center text-center transition-all duration-300;
   }
   .btn-styles {
     @apply hover:shadow-white cursor-pointer tracking-wide hover:-translate-y-1 shadow-2xl shadow-transparent rounded-full px-4 py-3 min-w-[7rem] flex justify-center text-center transition-all duration-300 font-light text-sm;
@@ -76,7 +76,7 @@ body {
 }
 
 /* hamburger menu icon */
-.hamburger-react div{
+.hamburger-react div {
   background-color: #f2ad18 !important;
 }
 
@@ -106,12 +106,12 @@ body {
   display: inline-block;
   position: relative;
   border: 3px solid;
-  border-color: #FFF #FFF transparent;
+  border-color: #fff #fff transparent;
   box-sizing: border-box;
   animation: rotation 1s linear infinite;
 }
 .loader::after {
-  content: '';  
+  content: "";
   box-sizing: border-box;
   position: absolute;
   left: 0;
@@ -135,8 +135,8 @@ body {
   100% {
     transform: rotate(360deg);
   }
-} 
-    
+}
+
 @keyframes rotationBack {
   0% {
     transform: rotate(0deg);
@@ -145,4 +145,3 @@ body {
     transform: rotate(-360deg);
   }
 }
-    

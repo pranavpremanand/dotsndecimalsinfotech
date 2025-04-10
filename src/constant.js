@@ -65,7 +65,8 @@ export {
 // company details
 export const companyDetails = {
   phone: "+918807165290",
-  whatsapp: "919003635437",
+  whatsapp:
+    "https://api.whatsapp.com/send/?phone=919003635437&text&type=phone_number&app_absent=0",
   address:
     "S.F.NO758/2 759/2A, SITE No,86,87, Kovai Thiru Nagar, CBE, Civil Aerodrome Post, Kalapatti, Coimbatore, Tamil Nadu -641014",
   email: "FbVYv@example.com",
@@ -139,32 +140,37 @@ export const webDevelopmentServices = [
     id: 1,
     title: "Custom Web Development",
     icon: EcommerceIcon,
-    description: "Unique, tailored websites designed to represent your brand and meet your specific business goals with pixel-perfect implementation.",
+    description:
+      "Unique, tailored websites designed to represent your brand and meet your specific business goals with pixel-perfect implementation.",
   },
   {
     id: 2,
     title: "E-Commerce Solutions",
     icon: SocialMediaIcon,
-    description: "Fully integrated online stores with secure payment gateways, inventory management, and seamless shopping experiences that drive conversions.",
+    description:
+      "Fully integrated online stores with secure payment gateways, inventory management, and seamless shopping experiences that drive conversions.",
   },
   {
     id: 3,
     title: "Content Management Systems",
     icon: LandingPageIcon,
-    description: "Easy-to-use CMS platforms that empower you to manage and update your website content without technical expertise.",
+    description:
+      "Easy-to-use CMS platforms that empower you to manage and update your website content without technical expertise.",
   },
   {
     id: 4,
     title: "Responsive Web Design",
     icon: CustomWebsiteIcon,
-    description: "Mobile-optimized websites that deliver exceptional user experiences across all devices and screen sizes.",
+    description:
+      "Mobile-optimized websites that deliver exceptional user experiences across all devices and screen sizes.",
   },
   {
     id: 5,
     title: "SEO Optimization",
     icon: CustomWebsiteIcon,
-    description: "Comprehensive search engine optimization strategies to improve your website's visibility and organic traffic growth.",
-  }
+    description:
+      "Comprehensive search engine optimization strategies to improve your website's visibility and organic traffic growth.",
+  },
 ];
 
 // app development services
@@ -173,32 +179,37 @@ export const appDevelopmentServices = [
     id: 1,
     title: "Native iOS Apps",
     icon: IosIcon,
-    description: "High-performance apps built with Swift for optimal speed, security, and seamless integration with Apple ecosystem features.",
+    description:
+      "High-performance apps built with Swift for optimal speed, security, and seamless integration with Apple ecosystem features.",
   },
   {
     id: 2,
     title: "Native Android Apps",
     icon: AndroidIcon,
-    description: "Robust applications developed in Kotlin that leverage Android's full capabilities for superior performance.",
+    description:
+      "Robust applications developed in Kotlin that leverage Android's full capabilities for superior performance.",
   },
   {
     id: 3,
     title: "Cross-Platform Solutions",
     icon: FlutterIcon,
-    description: "Cost-effective apps that work seamlessly across both iOS and Android using React Native or Flutter frameworks.",
+    description:
+      "Cost-effective apps that work seamlessly across both iOS and Android using React Native or Flutter frameworks.",
   },
   {
     id: 4,
     title: "UI/UX Design",
     icon: HybridAppIcon,
-    description: "Intuitive interfaces and smooth interactions designed to maximize user engagement and satisfaction.",
+    description:
+      "Intuitive interfaces and smooth interactions designed to maximize user engagement and satisfaction.",
   },
   {
     id: 5,
     title: "App Integration",
     icon: HybridAppIcon,
-    description: "Seamless connection with third-party APIs, payment systems, and enterprise software for enhanced functionality.",
-  }
+    description:
+      "Seamless connection with third-party APIs, payment systems, and enterprise software for enhanced functionality.",
+  },
 ];
 
 // all services

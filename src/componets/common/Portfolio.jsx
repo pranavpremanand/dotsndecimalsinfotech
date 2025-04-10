@@ -3,7 +3,12 @@ import { appPortfolio, webPortfolio } from "../../constant";
 
 const Portfolio = ({ page }) => {
   const isWebDevelopment = page === "web-development";
-  const portfolio = isWebDevelopment ? webPortfolio : appPortfolio;
+  const isAppDevelopment = page === "app-development";
+  const portfolio = isWebDevelopment
+    ? webPortfolio
+    : isAppDevelopment
+    ? appPortfolio
+    : [];
   const isOddCount = portfolio.length % 2 !== 0;
   const lastItem = portfolio[portfolio.length - 1];
 
@@ -15,7 +20,9 @@ const Portfolio = ({ page }) => {
           <h2 className="heading-2 text-center mb-8">
             {isWebDevelopment
               ? "Web Development Showcase"
-              : "App Development Portfolio"}
+              : isAppDevelopment
+              ? "App Development Portfolio"
+              : ""}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-5xl mx-auto">
             {portfolio.map((item) => (
