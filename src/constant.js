@@ -216,6 +216,7 @@ export const appDevelopmentServices = [
 export const allServices = [
   {
     id: 1,
+    link: "web-development",
     title: "Web Development",
     desc: "Crafting modern, responsive, and scalable websites that deliver outstanding user experiences.",
     detailContent: `In a world where online presence is key, having a well-crafted website can make all the difference. At Dots&Decimals Infotech, we build websites that are not only visually stunning but also highly functional, responsive, and optimized for performance. From e-commerce stores to complex web applications, we design and develop websites that deliver real results for your business.
@@ -229,6 +230,7 @@ Our Web Development Services Include:
   },
   {
     id: 2,
+    link: "app-development",
     title: "App Development",
     desc: "Creating high-performance mobile applications for iOS and Android that engage users and drive business growth.",
     detailContent: `In the mobile-first world we live in, a high-performing app is essential for business success. Our app development team excels in creating both iOS and Android apps that are intuitive, engaging, and seamlessly integrated with your business goals. We build mobile solutions that enhance user experiences and drive real results, whether for startups or established enterprises.
@@ -242,6 +244,7 @@ Our App Development Services Include:
   },
   {
     id: 3,
+    link: "game-development",
     title: "Game Development",
     desc: "Creating immersive gaming experiences across all platforms from concept to launch.",
     detailContent: `The gaming industry is booming, and we're here to turn your vision into reality. Our game development services cover everything from concept to post-launch support, ensuring that your game provides an engaging experience for players. Whether you're focused on mobile, console, or PC platforms, we create immersive experiences that stand out in the competitive gaming world.
@@ -255,6 +258,7 @@ Our Game Development Services Include:
   },
   {
     id: 4,
+    link: "ai-development",
     title: "AI Development",
     desc: "Leveraging artificial intelligence to transform businesses through automation and predictive insights.",
     detailContent: `Artificial Intelligence is revolutionizing the way businesses operate, and we're here to help you harness its full potential. Our AI solutions focus on improving operational efficiency, decision-making, and customer engagement through machine learning, predictive analytics, and natural language processing. Let us help you create smarter systems that drive growth and enhance customer experiences.
@@ -268,6 +272,7 @@ Our AI Development Services Include:
   },
   {
     id: 5,
+    link: "cloud-computing",
     title: "Cloud Computing Services",
     desc: "Comprehensive cloud solutions to improve flexibility, scalability and data security.",
     detailContent: `Embrace the future of computing with our comprehensive cloud services. We specialize in cloud migration, infrastructure management, and building scalable cloud-based applications. Our solutions are designed to help you reduce costs, improve flexibility, and scale your business, all while ensuring the highest levels of data security and availability.
@@ -281,6 +286,7 @@ Our Cloud Computing Services Include:
   },
   {
     id: 6,
+    link: "ar-vr-technology",
     title: "AR/VR Technology Services",
     desc: "Creating immersive, interactive experiences with cutting-edge augmented and virtual reality.",
     detailContent: `Augmented Reality (AR) and Virtual Reality (VR) are transforming industries, and we are at the forefront of this revolution. Our AR/VR solutions are designed to create immersive, interactive experiences for your customers. Whether for retail, education, entertainment, or training, we bring your vision to life with cutting-edge technology that engages and inspires.
@@ -294,6 +300,7 @@ Our AR/VR Technology Services Include:
   },
   {
     id: 7,
+    link: "blockchain-development",
     title: "Blockchain Development",
     desc: "Secure, transparent decentralized solutions for the modern digital landscape.",
     detailContent: `Blockchain technology is reshaping industries by offering secure, transparent, and decentralized solutions. Our team is skilled in creating blockchain-based systems, including smart contracts and decentralized applications (DApps), that help businesses stay ahead in a rapidly evolving digital landscape. Whether you're working with cryptocurrencies or seeking greater data security, we have you covered.
@@ -307,6 +314,7 @@ Our Blockchain Development Services Include:
   },
   {
     id: 8,
+    link: "ai-calling-solutions",
     title: "AI Calling Solutions",
     desc: "Intelligent voice solutions to automate customer interactions and improve efficiency.",
     detailContent: `Automate customer interactions with our AI-powered calling services. From handling routine inquiries to personalized appointment scheduling, our AI calling systems are designed to streamline customer service and improve operational efficiency. Let us help you enhance customer experience while reducing your team's workload with intelligent voice solutions.
@@ -320,6 +328,7 @@ Our AI Calling Solutions Include:
   },
   {
     id: 9,
+    link: "iot-solutions",
     title: "IoT (Internet of Things) Solutions",
     desc: "Smart connected systems that collect and analyze real-time data for better decision-making.",
     detailContent: `IoT is transforming how devices connect and interact with the world. Our IoT solutions help businesses create smart systems that collect and analyze real-time data for better decision-making and enhanced operations. Whether it's smart homes, industrial automation, or healthcare devices, we deliver IoT solutions that drive efficiency and innovation.
@@ -333,6 +342,7 @@ Our IoT Solutions Include:
   },
   {
     id: 10,
+    link: "erp-solutions",
     title: "Enterprise Resource Planning (ERP)",
     desc: "Integrated systems to streamline business operations and improve efficiency.",
     detailContent: `Streamline your business operations with our custom ERP solutions. We integrate all aspects of your organization, from finance and inventory to human resources and customer relationships, into a single, unified system. Our ERP solutions help businesses improve efficiency, reduce costs, and make data-driven decisions with ease.
@@ -346,6 +356,7 @@ Our ERP Services Include:
   },
   {
     id: 11,
+    link: "rpa-solutions",
     title: "Robotic Process Automation (RPA)",
     desc: "Intelligent automation solutions to optimize workflows and reduce errors.",
     detailContent: `Let us help you automate routine tasks and improve your workflow with RPA solutions. From finance to customer service, our RPA services streamline processes, reduce human error, and free up valuable time for your team. We work with you to identify areas for automation and implement intelligent solutions that optimize your operations.
@@ -359,6 +370,7 @@ Our RPA Services Include:
   },
   {
     id: 12,
+    link: "data-science",
     title: "Data Science Services",
     desc: "Transforming complex data into actionable insights that drive strategic decisions.",
     detailContent: `Data is an invaluable resource, and we help businesses unlock its full potential. With our data science services, we transform complex data sets into actionable insights that guide strategic decisions and drive growth. From data analysis to predictive modeling, we provide the tools and expertise to help your business thrive in a data-driven world.

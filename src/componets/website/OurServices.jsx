@@ -38,8 +38,9 @@ const OurServices = ({ length }) => {
         </p>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 mt-3">
           {services.map((service) => (
-            <div
-              onClick={() => handleSelectServiceToShowDetail(service)}
+            <Link
+              // onClick={() => handleSelectServiceToShowDetail(service)}
+              to={`/${service.link}`}
               data-aos="fade-up"
               key={service.id}
               className="rounded-lg p-[1px] bg-gradient-to-r from-secondary to-primary cursor-pointer"
@@ -58,7 +59,7 @@ const OurServices = ({ length }) => {
                   Learn More <PiCaretDoubleRightBold />
                 </button>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
         {length && (
