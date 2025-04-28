@@ -69,7 +69,7 @@ export const companyDetails = {
     "https://api.whatsapp.com/send/?phone=919003635437&text&type=phone_number&app_absent=0",
   address:
     "S.F.NO758/2 759/2A, SITE No,86,87, Kovai Thiru Nagar, CBE, Civil Aerodrome Post, Kalapatti, Coimbatore, Tamil Nadu -641014",
-  email: "info@dotsndecimalsinfotech.com",
+  email: "dotsndecimalsinfotech@gmail.com",
   instagram: "https://instagram.com/dotsndecimalsinfotech",
   facebook: "https://www.facebook.com/DotsnDecimalsInfotech",
   linkedin: "https://www.linkedin.com/company/dots-decimalsinfotech/about",
